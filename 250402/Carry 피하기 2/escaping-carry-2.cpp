@@ -24,7 +24,7 @@ int main() {
                 int b = arr[j];
                 int c = arr[k];
 
-                while (!carry && a && b && c) {
+                while (!carry && (a || b || c)) {
                     int sum = (a % digits) + (b % digits) + (c % digits);
                     if (sum >= 10) carry = true;
                     else {
