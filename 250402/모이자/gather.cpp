@@ -17,7 +17,7 @@ int main() {
     for (int i=0; i<n; i++) {
         int dist = 0;
         for (int j=0; j<n; j++)
-            dist += j * abs(A[i] - A[j]);
+            dist += A[j] * abs(i - j);
 
         min_dist = min(min_dist, dist);
     }
